@@ -38,8 +38,8 @@ class travel_assistant(travel,assistant):
         src_deets = self.source_details()
         dst_deets = self.dest_details()
         #print(dst_deets,"\n",src_deets)
-        print(f"1. Book a flight between {src_deets[0]['capital']} and {dst_deets[0]['capital']}")
-        print(f"2. Once you reach there, you'll meet {dst_deets[0]['demonym']} immigration")
+        print("1. Book a flight between %s and %s"%(src_deets[0]['capital'],dst_deets[0]['capital']))
+        print("2. Once you reach there, you'll meet %s immigration"%dst_deets[0]['demonym'])
 
 if __name__ == '__main__':
     t=travel_assistant("india","Canada")
