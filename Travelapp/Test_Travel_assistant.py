@@ -1,10 +1,10 @@
 import unittest
-import Travel_assistant
+import Travel_assistant as TA
 
 
 class MyTestCase(unittest.TestCase):
     def setUp(self):
-        t = Travel_assistant.travel_assistant("India","Canada")
+        t = TA.travel_assistant("India","Canada")
         self.src = t.source_details()
         self.dst = t.dest_details()
 
@@ -18,7 +18,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.dst[0]['name'], "Canada")
 
     def test_dest_a3code(self):
-        self.assertEqual(self.src[0]['alpha3Code'], "CAN")
+        self.assertEqual(self.dst[0]['alpha3Code'], "CAN")
 
 
 if __name__ == '__main__':

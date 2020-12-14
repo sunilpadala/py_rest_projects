@@ -42,5 +42,5 @@ class travel_assistant(travel,assistant):
         print(f"2. Once you reach there, you'll meet {dst_deets[0]['demonym']} immigration")
 
 if __name__ == '__main__':
-    t=travel_assistant("India","Canada")
+    t=travel_assistant("india","Canada")
     t.comp_src_to_dest()
